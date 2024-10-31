@@ -12,11 +12,16 @@ public class ArrayRataNilai28 {
             nilaiMhs[i] = sc.nextInt();
         }
 
+        int mhslulus = 0;
         for (int i = 0; i < nilaiMhs.length; i++) {
             total += nilaiMhs[i];
+            if (nilaiMhs[i] > 70) {
+                mhslulus++;
+            }
         }
 
         rata2 = total/nilaiMhs.length;;
         System.out.println("Rata-rata nilai = "+rata2);
+        System.out.println("Jumlah mahasiswa yang lulus = " + mhslulus);
     }
 }
